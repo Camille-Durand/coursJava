@@ -38,12 +38,17 @@ public class Main {
         System.out.print("Pts de défense: ");
         int defenseJ2 = scannerDefenseJ2.nextInt();
 
+        System.out.println("*** ** *");
+        Scanner scannerTour = new Scanner(System.in);
+        System.out.print("Nombre de tours: ");
+        int tour = scannerTour.nextInt();
+
         System.out.println("***** **** *** ** *");
 
-        Assassin anubis = new Assassin(nomJ1,vieJ1,attaqueJ1,defenseJ1,12);
-        Guerrier gremlin = new Guerrier(nomJ2,vieJ2,attaqueJ2,defenseJ2, 27);
+        Assassin j1 = new Assassin(nomJ1,vieJ1,attaqueJ1,defenseJ1,12);
+        Guerrier j2 = new Guerrier(nomJ2,vieJ2,attaqueJ2,defenseJ2, 27);
 
-        Partie game = new Partie(anubis,gremlin,5);
+        Partie game = new Partie(j1,j2,tour);
         System.out.println(game.lancerPartie());
         }
 }
