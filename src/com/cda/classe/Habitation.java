@@ -23,28 +23,28 @@ public class Habitation {
     public String getNom(){
         return nom;
     }
-    public void setNom(){
+    public void setNom(String nom){
         this.nom = nom;
     }
 
     public double getLongueur(){
         return longueur;
     }
-    public void setLongueur(){
+    public void setLongueur(int longueur){
         this.longueur = longueur;
     }
 
     public double getLargeur(){
         return largeur;
     }
-    public void setLargeur(){
+    public void setLargeur(int largeur){
         this.largeur = largeur;
     }
 
     public double getNbrEtage(){
         return nbrEtage;
     }
-    public void setNbrEtage(){
+    public void setNbrEtage(int nbrEtage){
         this.nbrEtage = nbrEtage;
     }
 

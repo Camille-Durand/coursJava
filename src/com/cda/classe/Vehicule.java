@@ -16,21 +16,21 @@ public class Vehicule {
     public String getNom(){
         return nom;
     }
-    public void setNom(){
+    public void setNom(String nom){
         this.nom = nom;
     }
 
     public int getNbrRoue(){
         return nbrRoue;
     }
-    public void setNbrRoue(){
+    public void setNbrRoue(int nbrRoue){
         this.nbrRoue = nbrRoue;
     }
 
     public int getVitesse(){
         return vitesse;
     }
-    public void setVitesse(){
+    public void setVitesse(int vitesse){
         this.vitesse = vitesse;
     }
 

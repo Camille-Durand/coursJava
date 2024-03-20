@@ -11,7 +11,6 @@ public class HomeCarTest {
         System.out.println("L’habitation : " + home.getNom() + " à une surface de: " + home.surface() + "m²");
         System.out.println("L’habitation : " + casa.getNom() + " à une surface de: " + casa.surface() + "m²");
         System.out.println("L’habitation : " + haus.getNom() + " à une surface de: " + haus.surface() + "m²");
-         */
 
         Vehicule milletipla = new Vehicule("1000tipla",4,287);
         Vehicule motobylette = new Vehicule("Motobylette",2,150);
@@ -30,6 +29,6 @@ public class HomeCarTest {
         System.out.println("Le vehicule " + concept.getNom() + " possède une vitesse boostée de " + concept.getVitesse() + "km/h");
 
         System.out.println("Le véhicule le + rapide est: " + motobylette.plusRapide(concept));
-
+        */
     }
 }
