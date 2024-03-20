@@ -17,28 +17,28 @@ public class Personnage {
     public String getNom(){
         return nom;
     }
-    public void setNom(){
+    public void setNom(String nom){
         this.nom = nom;
     }
 
     public int getVie(){
         return vie;
     }
-    public void setVie(){
+    public void setVie(int vie){
         this.vie = vie;
     }
 
     public int getAttaque(){
         return attaque;
     }
-    public void setAttaque(){
+    public void setAttaque(int attaque){
         this.attaque = attaque;
     }
 
     public int getDefense(){
         return defense;
     }
-    public void setDefense(){
+    public void setDefense(int defense){
         this.defense = defense;
     }
 
