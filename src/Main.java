@@ -3,9 +3,9 @@ import com.cda.classe.Habitation;
 public class Main {
     public static void main(String[] args) {
         // Instanciations
-        Habitation home = new Habitation("Home",3,5);
-        Habitation casa = new Habitation("Casa",4,6);
-        Habitation haus = new Habitation("Haus",5,7);
+        Habitation home = new Habitation("Home",3,5,1);
+        Habitation casa = new Habitation("Casa",4,6,2);
+        Habitation haus = new Habitation("Haus",5,7,3);
 
         // Appels de méthode
         System.out.println("L’habitation : " + home.getNom() + " à une surface de: " + home.surface() + "m²");

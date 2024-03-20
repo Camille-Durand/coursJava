@@ -6,15 +6,17 @@ public class Habitation {
     private String nom;
     private double longueur;
     private double largeur;
+    private int nbrEtage;
 
     // constructeurs
     public Habitation(){
     }
 
-    public Habitation(String nom, double longueur, double largeur){
+    public Habitation(String nom, double longueur, double largeur, int nbrEtage){
         this.nom = nom;
         this.longueur = longueur;
         this.largeur = largeur;
+        this.nbrEtage = nbrEtage;
     }
 
     // Getters Setters
@@ -39,9 +41,16 @@ public class Habitation {
         this.largeur = largeur;
     }
 
+    public double getNbrEtage(){
+        return nbrEtage;
+    }
+    public void setNbrEtage(){
+        this.nbrEtage = nbrEtage;
+    }
+
     // Méthode
     public double surface(){
-        return longueur * largeur;
+        return longueur * largeur * nbrEtage;
     }
 
 }
