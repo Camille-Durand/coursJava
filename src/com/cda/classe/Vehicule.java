@@ -35,13 +35,13 @@ public class Vehicule {
     }
 
     public void boost(){
-        vitesse = vitesse + 50;
+        this.vitesse += 50;
     }
 
     public String detect(){
-        if(nbrRoue == 2){
+        if(this.nbrRoue == 2){
             return "moto";
-        } else if (nbrRoue == 4){
+        } else if (this.nbrRoue == 4){
             return "vago";
         } else {
             return "autre";
