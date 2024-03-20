@@ -32,9 +32,9 @@ public class Partie extends Personnage{
         this.nbrTour = nbrTour;
     }
 
-    public String game(){
+    public String lancerPartie(){
         int tourActuel = 1;
-        while(tourActuel != this.nbrTour){
+        while(tourActuel != (this.nbrTour + 1)){
             System.out.println("Tour " + tourActuel + "/" + this.nbrTour);
             System.out.println(joueur1.getNom() + " attaque " + joueur2.getNom() + "!");
             joueur1.attaquer(joueur2);
