@@ -19,7 +19,7 @@ public class Guerrier extends Personnage{
         double luckyAttaque = Math.random();
 
         if(luckyAttaque > 0 && luckyAttaque <= 0.05){
-            System.out.println("Bonus de défense!");
+            System.out.println("Bonus de défense pour " + this.getNom() + "!");
             cible.setVie(cible.getVie() - (this.getAttaque() - cible.getDefense()));
             this.setVie(this.getVie() + this.bonusDefense);
         } else {

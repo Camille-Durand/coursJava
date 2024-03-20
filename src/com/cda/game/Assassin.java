@@ -19,7 +19,7 @@ public class Assassin extends Personnage{
         double luckyAttaque = Math.random();
 
         if(luckyAttaque <= 0.05){
-            System.out.println("Bonus d'attaque!");
+            System.out.println("Bonus d'attaque pour " + this.getNom() + "!");
             cible.setVie(cible.getVie() - ((this.getAttaque() + this.bonusAttaque) - cible.getDefense()));
         } else {
             cible.setVie(cible.getVie() - (this.getAttaque() - cible.getDefense()));

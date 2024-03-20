@@ -33,14 +33,17 @@ public class Partie extends Personnage{
     }
 
     public String game(){
-        while(this.nbrTour != 0){
+        int tourActuel = 1;
+        while(tourActuel != this.nbrTour){
+            System.out.println("Tour " + tourActuel + "/" + this.nbrTour);
             System.out.println(joueur1.getNom() + " attaque " + joueur2.getNom() + "!");
             joueur1.attaquer(joueur2);
 
             System.out.println(joueur2.getNom() + " attaque " + joueur1.getNom() + "!");
             joueur2.attaquer(joueur1);
 
-            nbrTour--;
+            tourActuel++;
+            System.out.println("***** **** *** ** *");
 
             if(joueur2.getVie() <= 0 && joueur1.getVie() > 0){ // Victoire joueur1
                 return "Fin de partie: " + joueur1.getNom() + " a gagné :)";
