@@ -2,9 +2,9 @@ package com.cda.gameAgain;
 
 import com.cda.game.Personnage;
 
-public class Batman extends Personnage implements Competence{
+public class Flash extends Personnage implements Competence{
 
-    public Batman(String nom, int vie, int attaque, int defense){
+    public Flash(String nom, int vie, int attaque, int defense){
         super(nom,vie,attaque,defense);
     }
     @Override
